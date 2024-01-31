@@ -24,7 +24,8 @@ const Footer = () => {
               </Reveal>
               <Reveal>
                 <p className="font-regular mx-auto text-lg lg:text-xl">
-                  我是曾暘鈞，畢業於僑光科技大學資訊科技系，目前在任職於初陽科技擔任前端工程師，有任何需要可以聯繫我。
+                  我是曾暘鈞，畢業於僑光科技大學資訊科技系，目前是專注於 Next.js
+                  一名前端工程師，有任何需要可以聯繫我。
                 </p>
               </Reveal>
               <Reveal>
