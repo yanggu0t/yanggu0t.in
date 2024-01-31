@@ -2,7 +2,7 @@ import React from "react";
 import Reveal from "./text-animate";
 import Container from "./container";
 import HoverCard from "./hover-card";
-import { Briefcase, School } from "lucide-react";
+import { School } from "lucide-react";
 
 const index = () => {
   return (
