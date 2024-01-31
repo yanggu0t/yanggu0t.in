@@ -1,8 +1,11 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
+import Header from "@/components/header";
+import Footer from "@/components/footer";
+import { ThemeProvider } from "@/components/theme-provider";
+import PosthogProvider from "@/components/posthog-provider";
 import "./globals.css";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -15,8 +18,18 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="zh-TW" suppressHydrationWarning>
+      <PosthogProvider>
+        <body className=" bg-slate-50 dark:bg-slate-950">
+          <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+            <Header />
+            <main>{children}</main>
+            <Footer />
+          </ThemeProvider>
+          <Analytics />
+          <SpeedInsights />
+        </body>
+      </PosthogProvider>
     </html>
   );
 }
