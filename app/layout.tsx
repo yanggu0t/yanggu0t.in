@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     siteName: "Portfolio | Yanggu0t 曾暘鈞",
     images: [
       {
-        url: "https://yanggu0t.in/preview.jpeg",
+        url: "https://yanggu0t.in/preview.png",
         alt: "Portfolio | Yanggu0t 曾暘鈞",
         width: 1460,
         height: 830,
