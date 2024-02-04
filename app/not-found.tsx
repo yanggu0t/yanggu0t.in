@@ -3,8 +3,11 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import { toast, useToast } from "@/components/ui/use-toast";
+import InviteDialog from "@/components/game-dialog";
 
 const FuzzyOverlayNotFound = () => {
+  const { toast } = useToast();
   return (
     // NOTE: An overflow of hidden will be required on a wrapping
     // element to see expected results
@@ -48,9 +51,7 @@ const ExampleContent = () => {
         這 裡 不 是 你 該 來 的 地 方 📺
       </p>
       <div className="flex items-center justify-center gap-3">
-        <span className="text-neutral-20 w-fit px-4 py-2 font-semibold text-neutral-200 transition-colors hover:bg-neutral-800">
-          待在這裡
-        </span>
+        <InviteDialog />
         <Link
           href="/"
           className="w-fit bg-neutral-200 px-4 py-2 font-semibold text-neutral-700 transition-colors hover:bg-neutral-50"
