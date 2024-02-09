@@ -17,7 +17,7 @@ const InviteDialog = ({ className }: { className?: string }) => {
     <>
       <Dialog>
         <DialogTrigger asChild>
-          <button className="text-neutral-20 w-fit bg-neutral-800 px-4 py-2 font-semibold text-neutral-200 transition-colors hover:bg-neutral-600">
+          <button className="w-fit bg-neutral-800 px-4 py-2 font-semibold text-neutral-200 transition-colors hover:bg-neutral-600">
             待在這裡
           </button>
         </DialogTrigger>

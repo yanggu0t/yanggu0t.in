@@ -23,6 +23,7 @@ const config = {
         sans: ["NotoSansTC", "sans-serif"], // 添加自定義字體
       },
       colors: {
+        text: "hsl(var(--text))",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",

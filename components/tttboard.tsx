@@ -123,7 +123,7 @@ const TTTBoard = () => {
   const renderSquare = (i: number): JSX.Element => (
     <div
       onClick={() => handleClick(i)}
-      className={`${board[i] == null ? "cursor-pointer" : "cursor-default"} ${winningSquares.includes(i) ? "text-[#cbc18b]" : ""} h-20 w-20 border-2 border-slate-950 text-center text-7xl hover:bg-violet-50`}
+      className={`${board[i] == null ? "cursor-pointer " : "cursor-default "} ${winningSquares.includes(i) ? "text-[#cbc18b] " : "text-white hover:bg-violet-50 dark:text-black "}h-20 w-20 border-2 border-slate-950 text-center text-7xl`}
     >
       {board[i]}
     </div>
@@ -154,7 +154,7 @@ const TTTBoard = () => {
 
   return (
     <>
-      <div className="m-auto grid grid-cols-3 border-2 border-slate-950">
+      <div className="text-text m-auto grid grid-cols-3 border-2 border-slate-950 bg-foreground dark:border-slate-50">
         {/* 格子渲染 */}
         {board.map((square, i) => (
           <div key={i}>{renderSquare(i)}</div>
@@ -162,7 +162,7 @@ const TTTBoard = () => {
       </div>
 
       {winner && (
-        <div className="mt-4 text-center">
+        <div className="text-text mt-4 text-center">
           <p>{`${winner == "O" ? "你贏了！" : "你輸了！"} `}</p>
           <button
             onClick={() => {
@@ -175,7 +175,7 @@ const TTTBoard = () => {
       )}
 
       {!winner && isBoardFull(board) && (
-        <div className="mt-4 text-center">
+        <div className="text-text mt-4 text-center">
           <p>這場沒輸沒贏</p>
           <button
             onClick={() => {
