@@ -46,7 +46,7 @@ const SocialLink = ({ className }: { className?: string }) => {
             <a
               target="_blank"
               rel="noopener noreferrer"
-              href="mailto:zxc225751@gmail.com"
+              href="mailto:developer@yanggu0t.in"
             >
               <Mail className="h-6 w-6 duration-100 hover:text-[#8878a0]" />
             </a>
