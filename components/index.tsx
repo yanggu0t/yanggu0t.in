@@ -2,7 +2,7 @@ import React from "react";
 import Reveal from "./text-animate";
 import Container from "./container";
 import HoverCard from "./hover-card";
-import { School } from "lucide-react";
+import { Briefcase, School } from "lucide-react";
 
 const index = () => {
   return (
@@ -37,10 +37,8 @@ const index = () => {
           </Reveal>
           <Reveal>
             <div className="py-2">
-              <span className="text-lg md:text-xl">
-                目前在努力學習前端技術，但也不排斥往後端發展
-              </span>
-              {/* <HoverCard
+              <span className="text-lg md:text-xl">目前任職於</span>
+              <HoverCard
                 className="text-lg md:text-xl"
                 title="初陽科技公司"
                 description="初陽科技於2022年成立專業軟體開發團隊，提供軟體開發與系統維護服務，利用豐富經驗與技術，致力於為企業創造數位價值。"
@@ -51,7 +49,7 @@ const index = () => {
               />
               <span className="text-lg md:text-xl">
                 擔任 React 前端工程師職位，
-              </span> */}
+              </span>
             </div>
           </Reveal>
           <Reveal>
